@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-const API_KEY = import.meta.env.VITE_GIFFY_API_KEY;
+// const API_KEY = import.meta.env.VITE_GIFFY_API_KEY;
 
 export default function useGif(tag){
     const [gif, setGif] = useState('');
     const [loading, setLoading] = useState(false);
-    const url = `https://api.giphy.com/v1/gifs/random?api_key=${API_KEY}`;
-    const tagurl = `https://api.giphy.com/v1/gifs/random?api_key=${API_KEY}&tag=${tag}`;
+    const url = `https://api.giphy.com/v1/gifs/random?api_key=1yR3DCFxRH8LPxvIgYgTVR57V5RjAg7s`;
+    const tagurl = `https://api.giphy.com/v1/gifs/random?api_key=1yR3DCFxRH8LPxvIgYgTVR57V5RjAg7s&tag=${tag}`;
 
     async function fetchApi(tag) {
         setLoading(true);
